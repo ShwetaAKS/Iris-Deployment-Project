@@ -22,11 +22,11 @@ button = st.button('Predict')
 #After pressing submit button what should happen
 if button:
     #Load preprocessor
-    with open('/workspaces/Iris-Deployment-Project/Notebook/pre.pkl','rb') as file1:
+    with open('Notebook/pre.pkl','rb') as file1:
         pre = pickle.load(file1)
 
     #Load the model
-    with open('/workspaces/Iris-Deployment-Project/Notebook/model.pkl','rb') as file2:
+    with open('Notebook/model.pkl','rb') as file2:
         model = pickle.load(file2)
 
     #if submit button is pressed
